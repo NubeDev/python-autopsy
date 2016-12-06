@@ -1,4 +1,4 @@
-# Syllbus
+# Syllabus
 
 ## Basic Concepts
   * What is Python?
