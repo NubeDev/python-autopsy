@@ -8,7 +8,7 @@
   * Other Numerical Operations
   * Strings
   * Simple Input & Output
-  * Type Conversation
+  * Type Conversion
   * Variables
   * In-Place Operators
   * Using Editor PyCharm
