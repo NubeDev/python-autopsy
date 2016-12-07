@@ -1,5 +1,5 @@
 # Syllabus
-
+    Short list of python learning path
 ## Basic Concepts
   * What is Python?
   * The Python Console
@@ -13,7 +13,7 @@
   * In-Place Operators
   * Using Editor PyCharm
   * Exam
-
+  
 ## Control Structures
   * Booleans & Comparison
   * `if` Statements
@@ -77,7 +77,33 @@
   * Exam
 
 ## Object-Oriented Programming
+  * Classes
+  * Inheritance
+  * Magic Methods & Operator Overloading
+  * Object Lifecycle
+  * Data Hiding 
+  * Class & Static Methods
+  * Properties
+  * A Simple Game
+  * Exam
 
 ## Regular Expressions
+  * Introduction
+  * Simple Metacharacters
+  * Groups
+  * Special Sequence
+  * Email Extraction
+  * Exam
 
 ## Pythonicness & Packaging
+  * The Zen of Python
+  * PEP
+  * More on Function Arguments
+  * Tuple Unpacking
+  * Ternary Operator
+  * More on `else` Statements
+  * `__main__`
+  * Major 3rd-Party Libraries
+  * Packages
+  * Packaging for Users
+  * Exam
