@@ -168,7 +168,7 @@ World!
 *When string is printed, the quotes around it are not displayed.*
 
 #### *Input*
-To get input from user the in Python, you can use `raw_input` function.
+To get input from the user in Python, you can use `raw_input` function.
 The function prompts the user for input, and returns what they enter as a string(with the contents automatically escaped).
 ```python
 >>> raw_input("Enter something please:")
