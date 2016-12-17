@@ -117,10 +117,10 @@ False
 ```
 Python uses words for its Boolean operators, whereas most other languages use symbols as `&&`, `||` and `!`.
 
-|`cond_1 and cond_2`|`True`|`False`|
-| :----------------------- |:----:| :----:|
-|`True`                    | True | False |
-|`False`                   | False| False |
+|__`cond_1 and cond_2`__|__`True`__|__`False`__|
+| :-------------------- |:--------:| :--------:|
+|__`True`__             |   True   |   False   |
+|__`False`__            |   False  |   False   |
 
 
 ### *Boolean `or`*
