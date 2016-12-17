@@ -333,44 +333,6 @@ x = 7
 x = x + 2
 print(x)
 ```
-Running file with content above would output `9`.
-
-*Python source files have extension of __.py__*
+Running file with content above would output `9`. Python source files have extension of __.py__.
 
 On Linux platform you can run file as Python executable if it starts with `#!/bin/python` or with `#!/usr/bin/env python`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
