@@ -322,7 +322,9 @@ spameggs
 ## Using an Editor
 So far, we've only using Python with the console, entering and running one line of code at a time.
 Actual programs are created differently. Many lines of code are written in a file and then executed with the Python interpreter.
+
 *IMHO, at the time of writing this document, the best integrated development environment for Python language is __PyCharm__.*
+
 In __PyCharm__ you  can create file a new file, enter some code, save it, and run it.
 Each line of code is interpreted as though you enter it one line at a time at the console.
 
@@ -332,7 +334,9 @@ x = x + 2
 print(x)
 ```
 Running file with content above would output `9`.
+
 *Python source files have extension of __.py__*
+
 On Linux platform you can run file as Python executable if it starts with `#!/bin/python` or with `#!/usr/bin/env python`.
 
 
