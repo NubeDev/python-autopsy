@@ -1,7 +1,7 @@
 # Syllabus
     Short list of python learning path
 ## Basic Concepts
-  * What is Python?
+  * [What is Python?](BasicConcepts/course.md)
   * The Python Console
   * Simple Operations
   * Floats
@@ -13,7 +13,7 @@
   * In-Place Operators
   * Using Editor PyCharm
   * Exam
-  
+
 ## Control Structures
   * Booleans & Comparison
   * `if` Statements
@@ -81,7 +81,7 @@
   * Inheritance
   * Magic Methods & Operator Overloading
   * Object Lifecycle
-  * Data Hiding 
+  * Data Hiding
   * Class & Static Methods
   * Properties
   * A Simple Game
