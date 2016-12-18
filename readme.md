@@ -2,7 +2,7 @@
     Short list of python learning path
 ## Basic Concepts
   * [What is Python?](BasicConcepts/BasicConcepts.md)
-  * The Python Console
+  * [The Python Console](ControlStructures/ControlStructures.md)
   * Simple Operations
   * Floats
   * Other Numerical Operations
