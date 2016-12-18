@@ -143,8 +143,6 @@ A law of Boolean algebra is an identity such as `x ∨ (y ∨ z) = (x ∨ y) ∨
 Boolean algebra satisfies many of the same laws as ordinary algebra when one matches up `∨` with extended addition and `∧` with multiplication.
 
 Basic laws are:
-|||
-|:------------------------------|:--------------------------:|
 |Associativity of `∨`           | `x ∨ (y ∨ z) = (x ∨ y) ∨ z`|
 |Associativity of `∧`           | `x ∧ (y ∧ z) = (x ∧ y) ∧ z`|
 |Commutativity of `∨`           |       `x ∨ y = y ∨ x`      |
@@ -159,6 +157,7 @@ Basic laws are:
 |Absorption 2                   | `x ∨ (x ∧ y) = x`|
 |Distributivity of `∨` over `∧` | `x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)`|
 |Annihilator for `∨`            | `x ∨ 1 = 1`|
+|:------------------------------|:--------------------------:|
 
 #### *Nonmonotone laws*
 
