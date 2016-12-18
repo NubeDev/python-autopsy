@@ -1,7 +1,7 @@
 # Syllabus
     Short list of python learning path
 ## Basic Concepts
-  * [What is Python?](BasicConcepts/course.md)
+  * [What is Python?](BasicConcepts/BasicConcepts.md)
   * The Python Console
   * Simple Operations
   * Floats
