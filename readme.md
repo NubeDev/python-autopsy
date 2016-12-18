@@ -1,8 +1,8 @@
 # Syllabus
     Short list of python learning path
-## Basic Concepts
-  * [What is Python?](BasicConcepts/BasicConcepts.md)
-  * [The Python Console](ControlStructures/ControlStructures.md)
+## [Basic Concepts](BasicConcepts/BasicConcepts.md)
+  * What is Python?
+  * The Python Console
   * Simple Operations
   * Floats
   * Other Numerical Operations
@@ -14,7 +14,7 @@
   * Using Editor PyCharm
   * Exam
 
-## Control Structures
+## [Control Structures](ControlStructures/ControlStructures.md)
   * Booleans & Comparison
   * `if` Statements
   * `else` Statement
