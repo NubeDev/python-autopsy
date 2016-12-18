@@ -252,6 +252,21 @@ True
 ```
 You can chain multiple conditional statements in an `if` statement using the Boolean operators.
 
+## Operator Precedence
+
+__Operator Precedence__ is very important concept in programming. It is an extension of the mathematical idea or order of operations (multiplication is being preformed before addition, etc.),
+to include other operators, such as those in Boolean logic.
+
+The below code shows that `==` has higher precedence than `or`:
+```python
+>>> False == False or True
+True
+>>> False == (False or True)
+False
+>>> (False == False) or True
+True
+```
+Python's order of operations is the same as that of normal mathematics: parentheses first, than exponentiation, then multiplication/division, and than addition/subtraction.
 
 
 
