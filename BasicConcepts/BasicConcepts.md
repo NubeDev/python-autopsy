@@ -23,7 +23,7 @@ In this part we will start using Python via the Python console on Unix system.
 Open terminal emulator and type `python`
 
 You should get output something like:
-```python
+```
 Python 2.7.12 (default, Nov 19 2016, 06:48:10)
 [GCC 5.4.0 20160609] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
