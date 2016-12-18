@@ -141,33 +141,38 @@ A law of Boolean algebra is an identity such as `x ∨ (y ∨ z) = (x ∨ y) ∨
 #### *Monotone laws*
 
 Boolean algebra satisfies many of the same laws as ordinary algebra when one matches up `∨` with extended addition and `∧` with multiplication.
-Basic laws are:
 
- *  Associativity of `∨`............`x ∨ (y ∨ z) = (x ∨ y) ∨ z`
- * Associativity of `∧`.............`x ∧ (y ∧ z) = (x ∧ y) ∧ z`
- * Commutativity of `∨`.............`x ∨ y = y ∨ x`
- * Commutativity of `∧`.............`x ∧ y = y ∧ x`
- * Distributivity of `∧` over `∨`...`x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)`
- * Identity for `∨`.................`x ∨ 0 = x`
- * Identity for `∧`.................`x ∧ 1 = x`
- * Annihilator for `∧`..............`x ∧ 0 = 0`
- * Idempotence of `∨`...............`x ∨ x = x`
- * Idempotence of `∧`...............`x ∧ x = x`
- * Absorption 1.....................`x ∧ (x ∨ y) = x`
- * Absorption 2.....................`x ∨ (x ∧ y) = x`
- * Distributivity of `∨` over `∧`...`x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)`
- * Annihilator for `∨`..............`x ∨ 1 = 1`
+Basic laws are:
+ |:------------------------------|:--------------------------:|
+ |Associativity of `∨`           | `x ∨ (y ∨ z) = (x ∨ y) ∨ z`|
+ |Associativity of `∧`           | `x ∧ (y ∧ z) = (x ∧ y) ∧ z`|
+ |Commutativity of `∨`           |       `x ∨ y = y ∨ x`      |
+ |Commutativity of `∧`           |       `x ∧ y = y ∧ x`|
+ |Distributivity of `∧` over `∨` | `x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)`|
+ |Identity for `∨`               |       `x ∨ 0 = x`|
+ |Identity for `∧`               |       `x ∧ 1 = x`|
+ |Annihilator for `∧`            |       `x ∧ 0 = 0`|
+ |Idempotence of `∨`             |       `x ∨ x = x`|
+ |Idempotence of `∧`             |       `x ∧ x = x`|
+ |Absorption 1                   | `x ∧ (x ∨ y) = x`|
+ |Absorption 2                   | `x ∨ (x ∧ y) = x`|
+ |Distributivity of `∨` over `∧` | `x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)`|
+ |Annihilator for `∨`            | `x ∨ 1 = 1`|
 
 #### *Nonmonotone laws*
 
 The complement operation is defined by the following two laws.
- * Complementation 1.......`x ∧ ¬x = 0`
- * Complementation 2.......`x ∨ ¬x = 1`
+ |:-----------------|:-----------:|
+ |Complementation 1 | `x ∧ ¬x = 0`|
+ |Complementation 2 | `x ∨ ¬x = 1`|
+
 In both ordinary and Boolean algebra, negation works by exchanging pairs of elements, whence in both algebras it satisfies the double negation law (also called involution law).
- * Double negation........`¬(¬x) = x`
+ * Double negation | `¬(¬x) = x`
+
 Boolean algebra also satisfies De Morgan's lows:
- * De Morgan 1............`¬x ∧ ¬y = ¬(x ∨ y)`
- * De Morgan 1............`¬x ∨ ¬y = ¬(x ∧ y)`
+ |:-----------|:-------------------:|
+ |De Morgan 1 |`¬x ∧ ¬y = ¬(x ∨ y)`|
+ |De Morgan 1 |`¬x ∨ ¬y = ¬(x ∧ y)`|
 
 #### *Boolean searches*
 
@@ -186,9 +191,6 @@ The following examples use a syntax supported by Google.
  ```
  "Search term 1" −"Search term 2"
  ```
-
-
-
 ## Boolean Logic
 
 Boolean logic is used to make more complicated conditions for `if` statements that rely on more than one condition.
@@ -301,4 +303,4 @@ You can chain multiple conditional statements in an `if` statement using the Boo
 
 
 
-................................................................................................
+ |
