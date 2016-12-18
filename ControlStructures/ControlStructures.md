@@ -268,6 +268,24 @@ True
 ```
 Python's order of operations is the same as that of normal mathematics: parentheses first, than exponentiation, then multiplication/division, and than addition/subtraction.
 
+The following table lists all of  Python's operators, from highest precedence to lowest.
+
+|Operator                    | Description|
+|:---------------------------|:-----------|
+| `**`                       |Exponentiation (raise to the power)|
+| `~ + -`                    |Complement, unary plus and minus |
+| `* / % //`                 |Multiply, divide, modulo and floor division|
+| `+ -`                      |Addition and subtraction|
+| `<< >>`                    |Right and left bitwise shift|
+| `&`                        |Bitwise `AND`|
+| `^ |`                      |Bitwise exclusive `OR` and regular `OR`|
+| `<= < > >=`                |Comparison operators|
+| `<> == !=`                 |Equality operators|
+| `= %= /= //= -= += *= **=` |Assignment operators|
+| `is  is not`               |Identity operators|
+| `in  not in`               | Membership operators|
+| `not or and`               | Logical operators|
+
 
 
 
