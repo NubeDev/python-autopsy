@@ -143,6 +143,7 @@ A law of Boolean algebra is an identity such as `x ∨ (y ∨ z) = (x ∨ y) ∨
 Boolean algebra satisfies many of the same laws as ordinary algebra when one matches up `∨` with extended addition and `∧` with multiplication.
 
 Basic laws are:
+|||
 |:------------------------------|:--------------------------:|
 |Associativity of `∨`           | `x ∨ (y ∨ z) = (x ∨ y) ∨ z`|
 |Associativity of `∧`           | `x ∧ (y ∧ z) = (x ∧ y) ∧ z`|
@@ -162,6 +163,7 @@ Basic laws are:
 #### *Nonmonotone laws*
 
 The complement operation is defined by the following two laws.
+
 |:-----------------|:-----------:|
 |Complementation 1 | `x ∧ ¬x = 0`|
 |Complementation 2 | `x ∨ ¬x = 1`|
@@ -170,6 +172,7 @@ In both ordinary and Boolean algebra, negation works by exchanging pairs of elem
  * Double negation | `¬(¬x) = x`
 
 Boolean algebra also satisfies De Morgan's lows:
+
 |:-----------|:-------------------:|
 |De Morgan 1 |`¬x ∧ ¬y = ¬(x ∨ y)`|
 |De Morgan 1 |`¬x ∨ ¬y = ¬(x ∧ y)`|
