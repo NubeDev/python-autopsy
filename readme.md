@@ -18,8 +18,8 @@
   * Booleans & Comparison
   * `if` Statements
   * `else` Statement
+  * Boolean Algebra & De Morgan Law
   * Boolean Logic
-  * Boolean Algebra & D'Morgan Law
   * Operator Precedence
   * `while` Loops
   * Lists
