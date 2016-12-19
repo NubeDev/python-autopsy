@@ -70,10 +70,10 @@ Use parentheses to determine which operations are preformed first:
 
 The minus sign indicate a negative number. Operations are preformed on negative numbers, just as they are on positive ones.
 ```python
->>> 2 * (3 + 4)
-14
->>> 12 / 6
-2
+>>> -7
+-7
+>>> (-7 + 2) * (-4)
+20
 ```
 *The plus signs can be also put in front of numbers, but this has no effect*
 
