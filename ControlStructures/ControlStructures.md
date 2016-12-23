@@ -104,8 +104,8 @@ In mathematics and mathematical logic, Boolean algebra is the branch of algebra 
 The main operations of Boolean algebra are the *conjunction* `and` denoted as `∧`, the *disjunction* `or` denoted as `∨`, and the *negation* `not` denoted as `¬`.
 Boolean algebra was introduced by George Boole in his first book The Mathematical Analysis of Logic (1847).
 
-In Boolean algebra 0 and 1 do not behave like integers 0 and 1, for which `1 + 1 = 2`. Boolean algebra may be identified as *integer arithmetic modulo 2*, for which `1 + 1 = 0`.
-Addition and multiplication then play the Boolean roles of `XOR` (exclusive-or) and `AND` (conjunction) respectively, with disjunction `x ∨ y` (inclusive-or) definable as `x + y + xy`.
+In Boolean algebra 0 and 1 do not behave like integers 0 and 1, for which `1 + 1 = 2`. For example Boolean `xor` may be defined as *integer arithmetic modulo 2*, for which `1 + 1 = 0`.
+Addition and multiplication then play the Boolean roles of `OR` (inclusive-or) and `AND` (conjunction) respectively, where disjunction `x ∨ y` has a bit strange addition of `1`s like `1 + 1 = 1`.
 
 ### *Basic operations*
 
@@ -117,20 +117,20 @@ The basic operations of Boolean calculus are as follows.
 If the truth values 0 and 1 are interpreted as integers, these operations may be expressed with the ordinary operations of arithmetic, or by the minimum/maximum functions:
 ```
 x ∧ y = x * y = min(x,y)
-x ∨ y = x + y - (x * y) = max(x,y)
+x ∨ y = x + y = max(x,y)
 ¬x = 1 - x
 ```
 Alternatively the values of `x ∧ y`, `x ∨ y`, and `¬x` can be expressed by tabulating their values with truth tables as follows.
 
 | __`x`__	| __`y`__	| __`x ∧ y`__ | __`x ∨ y`__	|
-|:--------|:-------:|:-----------:|:-----------:|
+|:-------:|:-------:|:-----------:|:-----------:|
 | __`0`__ | __`0`__ |      0      |      0      |
 | __`1`__ | __`0`__ |      0      |      1      |
 | __`0`__ | __`1`__ |      0      |      1      |
 | __`1`__ | __`1`__ |      1      |      1      |
 
 | __`x`__ | __`¬x`__ |
-|:--------|:--------:|
+|:-------:|:--------:|
 | __`0`__ |     1    |
 | __`1`__ |     0    |
 
@@ -142,22 +142,22 @@ A law of Boolean algebra is an identity such as `x ∨ (y ∨ z) = (x ∨ y) ∨
 
 Boolean algebra satisfies many of the same laws as ordinary algebra when one matches up `∨` with extended addition and `∧` with multiplication.
 
-|Basic laws                     |                            |
-|:------------------------------|:--------------------------:|
-|Associativity of `∨`           | `x ∨ (y ∨ z) = (x ∨ y) ∨ z`|
-|Associativity of `∧`           | `x ∧ (y ∧ z) = (x ∧ y) ∧ z`|
-|Commutativity of `∨`           |       `x ∨ y = y ∨ x`      |
-|Commutativity of `∧`           |       `x ∧ y = y ∧ x`|
-|Distributivity of `∧` over `∨` | `x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)`|
-|Identity for `∨`               |       `x ∨ 0 = x`|
-|Identity for `∧`               |       `x ∧ 1 = x`|
-|Annihilator for `∧`            |       `x ∧ 0 = 0`|
-|Idempotence of `∨`             |       `x ∨ x = x`|
-|Idempotence of `∧`             |       `x ∧ x = x`|
-|Absorption 1                   | `x ∧ (x ∨ y) = x`|
-|Absorption 2                   | `x ∨ (x ∧ y) = x`|
-|Distributivity of `∨` over `∧` | `x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)`|
-|Annihilator for `∨`            | `x ∨ 1 = 1`|
+|Basic laws                     |                                  |                                  |
+|:------------------------------|:--------------------------------:|:--------------------------------:|
+|Associativity of `∨`           | `x ∨ (y ∨ z) = (x ∨ y) ∨ z`      | `x + (y + z) = (x + y) + z`      |
+|Associativity of `∧`           | `x ∧ (y ∧ z) = (x ∧ y) ∧ z`      | `x * (y * z) = (x * y) * z`      |
+|Commutativity of `∨`           |       `x ∨ y = y ∨ x`            |       `x + y = y + x`            |
+|Commutativity of `∧`           |       `x ∧ y = y ∧ x`            |       `x * y = y * x`            |
+|Distributivity of `∧` over `∨` | `x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)`| `x * (y + z) = (x * y) + (x * z)`|
+|Identity for `∨`               |       `x ∨ 0 = x`                |       `x + 0 = x`                |
+|Identity for `∧`               |       `x ∧ 1 = x`                |       `x * 1 = x`                |
+|Annihilator for `∧`            |       `x ∧ 0 = 0`                |       `x * 0 = 0`                |
+|Idempotence of `∨`             |       `x ∨ x = x`                |       `x + x = x`                |
+|Idempotence of `∧`             |       `x ∧ x = x`                |       `x * x = x`                |
+|Absorption 1                   | `x ∧ (x ∨ y) = x`                | `x * (x + y) = x`                |
+|Absorption 2                   | `x ∨ (x ∧ y) = x`                | `x + (x * y) = x`                |
+|Distributivity of `∨` over `∧` | `x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z)`| `x + (y * z) = (x + y) * (x + z)`|
+|Annihilator for `∨`            |       `x ∨ 1 = 1`                |       `x + 1 = 1`                |
 
 #### *Nonmonotone laws*
 
@@ -165,18 +165,94 @@ The complement operation is defined by the following two laws.
 
 |Complementation | |
 |:-----------------|:-----------:|
-|Complementation 1 | `x ∧ ¬x = 0`|
-|Complementation 2 | `x ∨ ¬x = 1`|
+|Complementation 1 | `x * ¬x = 0`|
+|Complementation 2 | `x + ¬x = 1`|
 
 In both ordinary and Boolean algebra, negation works by exchanging pairs of elements, whence in both algebras it satisfies the double negation law (also called involution law).
- * Double negation | `¬(¬x) = x`
+ * Double negation `¬(¬x) = x`
 
 Boolean algebra also satisfies De Morgan's lows:
 
 | De Morgan's lows| |
 |:-----------|:-------------------:|
-|De Morgan 1 |`¬x ∧ ¬y = ¬(x ∨ y)`|
-|De Morgan 1 |`¬x ∨ ¬y = ¬(x ∧ y)`|
+|De Morgan 1 |`¬x * ¬y = ¬(x + y)`|
+|De Morgan 1 |`¬x + ¬y = ¬(x * y)`|
+
+#### *Basic problems*
+
+|Multiplication (`and`)|Addition(`or`)|
+|:--------------------:|:------------:|
+|`0 * 0 = 0`           |`0 + 0 = 0`   |
+|`0 * 1 = 0`           |`0 + 1 = 1`   |
+|`1 * 0 = 0`           |`1 + 0 = 1`   |
+|`1 * 1 = 1`           |`1 + 1 = 1`   |
+|                      |              |
+|`A * 0 = 0`           |`A + 0 = A`   |
+|`A * 1 = A`           |`A + 1 = 1`   |
+|`A * A = A`           |`A + A = A`   |
+|`A * ¬A = 0`          |`A + ¬A = 1`  |
+
+|Negation   |
+|:---------:|
+|`¬1 = 0`   |
+|`¬0 = 1`   |
+|`¬(¬A) = A`|	 
+
+The most surprising of all equations is `1 + 1 = 1`. If you look at values `0` and `1` as *"nothing"* and *"something"*, respectively.
+Than this makes more sense, because if I add two piles of *"something"*, I end up with bigger pile of *"something"*.
+
+Let's look at some examples how we can manipulate boolean expression using rules written above.
+```
+A + AB = A(1 + B) = A(1) = A
+```
+```
+(A + B)(A + C) = AA + AC + BA + BC =
+= A + AC + BA + BC = A(1 + C) + BA + BC =
+= A + BA + BC = A(1 + B) + BC =
+= A + BC
+```
+```
+A + A(¬A) = A(1 + ¬A) = A
+```
+```
+AB + A(¬B) = A(B + ¬B) = A(1) = A
+```
+```
+(A + ¬B + C + ¬D)C = AC + ¬BC + CC + ¬DC =
+= AC + ¬BC + C + ¬DC = AC + ¬BC + C(1 + ¬D) =
+= AC + ¬BC + C = AC + C(¬B + 1) = AC + C =
+= C(A + 1) = C
+```
+
+As we can see in examples there are some handy rules.
+* `(X + Y)(X + Z) = X + YZ`
+* `X + XY = X`
+* `A + ¬AB = A + B`
+
+Last on is bit hard to prove using just manipulating expression, but because Boolean algebra has only two values we can check all possible combinations.
+This is done by using truth tables.
+
+| `A  B` |  `A + ¬AB`  |  `A + B`  |
+|:------:|:-----------:|:---------:|
+| `0  0` | 0 + 1*0 = 0 | 0 + 0 = 0 |
+| `0  1` | 0 + 1*1 = 1 | 0 + 1 = 1 |
+| `1  0` | 1 + 0*0 = 1 | 1 + 0 = 1 |
+| `1  1` | 1 + 0*1 = 1 | 1 + 1 = 1 |
+
+One more example.
+
+| `A  B  C` | `A + BC`  |
+|:---------:|:---------:|
+| `0  0  0` |     0     |
+| `0  0  1` |     0     |
+| `0  1  0` |     0     |
+| `0  1  1` |     1     |
+| `1  0  0` |     1     |
+| `1  0  1` |     1     |
+| `1  1  0` |     1     |
+| `1  1  1` |     1     |
+
+
 
 #### *Boolean searches*
 
