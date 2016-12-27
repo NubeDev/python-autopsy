@@ -30,7 +30,7 @@
   * A Simple Calculator
   * Exam
 
-## Functions & Modules
+## [Functions & Modules](FunctionsAndModules/FunctionsAndModules.md)
   * Code Reuse
   * Functions
   * Function Arguments
