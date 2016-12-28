@@ -41,7 +41,7 @@
   * The Standard Library
   * Exam
 
-## Exceptions & Files
+## [Exceptions & Files](ExceptionsAndFiles/ExceptionsAndFiles.md)
   * Exceptions
   * Exception Handling
   * `finally`
@@ -53,7 +53,7 @@
   * Working with Files
   * Exam
 
-## More Types
+## [More Types](MoreTypes/MoreTypes.md)
   * None
   * Dictionaries
   * Dictionary Functions
