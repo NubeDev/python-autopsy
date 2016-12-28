@@ -292,67 +292,74 @@ Notice in the output, the lines are separated by blank lines, as the `print` fun
 
 ## Writing files
 
+To write files you use the `write` method, which writes a string to the file.
 
+For example:
+```python
+file = open("newfile.txt", "w")
+file.write("This has been written to a file")
+file.close()
 
+file = open("newfile.txt", "r")
+print(file.read())
+file.close()
+```
+Result:
+```
+This has been written to a file
+```
+The "w" mode will create a file, if it does not already exist.
 
+When a file is opened in write mode, the file's existing content is deleted.
+```python
+file = open("newfile.txt", "r")
+print("Reading initial contents")
+print(file.read())
+print("Finished")
+file.close()
 
+file = open("newfile.txt","w")
+file.write("Some new text")
+file.close()
 
+file = open("newfile.txt", "r")
+print("Reading new contents")
+print(file.read())
+print("Finished")
+file.close()
+```
+Result:
+```
+Reading initial contents
+some initial text
+Finished
+Reading new contents
+Some new text
+Finished
+```
+As you can see, the content of the file has been overwritten.
 
+The `write` method returns the number of __bytes__ written to a file, if successful.
+```python
+msg = "Hello world"
+file = open("newfile.txt", "w")
+amount_written = file.write(msg)
+print(amount_written)
+file.close()
+```
+Result:
+```
+12
+```
 
+## Working with Files
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
-###########################################
+It is good practice to avoid wasting resources by making sure that files are always closed after they have been used. One way of doing this is to use `try` and `finally`.
+```python
+try:
+  f = open("filename.txt")
+  print(f.read())
+finally:
+  f.close()
+```
+This ensures that the file is always closed, even if an error occurs within it.
