@@ -62,10 +62,9 @@
   * List Comprehensions
   * String Formatting
   * Useful Functions
-  * Text Analyzer
   * Exam
 
-## Functional Programming
+## [Functional Programming](FunctionalProgramming/FunctionalProgramming.md)
   * Introduction
   * Lambdas
   * `map` & `filter`
