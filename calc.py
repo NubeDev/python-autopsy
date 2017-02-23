@@ -11,5 +11,6 @@ while True:
         num1 = raw_input("Enter num1: ")
         num2 = raw_input("Enter num2: ")
         print (int(num1) + int(num2))
+        break
     else:
         print("Unknown operation!")
